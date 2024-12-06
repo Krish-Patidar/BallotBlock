@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Home</title>
+  </head>
+  <body>
+
+    <!-- navbar start -->
+
+    <nav>
+      <div class="nav__logo">BallotBlock<span>.</span></div>
+      <ul class="nav__links">
+        <li class="link"><a href="#">Home</a></li>
+        <li class="link"><a href="index.html">Caste Your Vote</a></li>
+        <li class="link"><a href="result.html">Election Results</a></li>
+        <li class="link"><a href="transperency.html">Transparency</a></li>
+      </ul>
+      <button class="btnn">Contact Us</button>
+    </nav>
+
+        <!-- navbar end -->
+
+        <!-- welcome notification start -->
+
+        <div class="notifications-overlay" id="notificationOverlay">
+          <div class="notifications-container">
+            <div class="notificationCard">
+              <p class="notificationmainHeading">Welcome to BallotBlock!</p>
+              <svg class="bellIcon" viewBox="0 0 448 512"><path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"></path></svg>
+              <p class="notificationPara">BallotBlock is a cutting-edge decentralized voting system powered by Ethereum, designed to push the boundaries of blockchain innovation. Built with passion and expertise, this project was crafted as part of our journey in the Build Blockchain Hackathon to showcase our skills in blockchain technology.</p>
+              <p class="notificationHeading">A Quick Note</p>
+                <p class="notificationPara"> BallotBlock is a demonstration project and is not affiliated with any government or official voting systems. It’s not intended for public use but serves as a testament to the possibilities of decentralized solutions.</p>        
+                <p class="notificationHeading">Meet the Makers</p>
+               <p class="notificationPara"> This vision was brought to life by Krish Patidar, Nitin Sahu, and Ayyub Khan — a team dedicated to driving innovation and reimagining the future of technology.</p>
+              <div class="buttonContainer">
+                <button class="AllowBtn" onclick="hideNotification()">Done</button>
+                <button class="NotnowBtn" onclick="hideNotification()">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+                <!-- welcome notification end -->
+
+                        <!-- main header start -->
+
+
+    <header>
+      <br>
+        <div class="section__container header__container">
+        <div class="header__image">
+          <img src="assets/image2.jpg" alt="header" />
+          <img src="assets/image3.jpg" alt="header" />
+        </div>
+        <div class="header__content">
+          <div>
+            <h1>The Reliable 🗳️<br> Path To Elections</h1>
+            <p class="section__subtitle">
+                Step into the future of voting with our Ethereum-based platform. Experience unparalleled security, transparency, and convenience as you participate in elections built for modern democracies.
+            <div class="action__btns">
+              <button class="btnn">Vote Now</button>
+              <div class="story">
+                <div class="video__image">
+                </div>
+                <span class="results">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elections Results</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+            <!-- main header end -->
+
+                    <!-- upcoming elections start -->
+
+
+
+    <section class="section__container election__container">
+      <div class="section__header">
+        <div>
+          <h2 class="section__title">Explore Upcoming Elections</h2>
+          <p class="section__subtitle">
+            Discover key information about upcoming elections in your state. Stay informed and find all the details you need to make your voice heard.
+          </p>
+        </div>
+        <div class="election__nav">
+          <span><i class="ri-arrow-left-s-line"></i></span>
+          <span><i class="ri-arrow-right-s-line"></i></span>
+        </div>
+      </div>
+      <div class="election__grid">
+        <div class="election__card">
+          <img src="assets/delhi1.png" alt="election" />
+          <div class="election__details">
+            <p class="election__title">Election Date: February 10, 2024
+                            </p>
+            <p class="election__subtitle">Delhi</p>
+          </div>
+        </div>
+        <div class="election__card">
+          <img src="assets/madhyapradesh2.jpg" alt="election" />
+          <div class="election__details">
+            <p class="election__title">Election Date: April 5, 2024
+                            </p>
+            <p class="election__subtitle">Madhya Pradesh</p>
+          </div>
+        </div>
+        <div class="election__card">
+          <img src="assets/maharashtra9.webp" alt="election" />
+          <div class="election__details">
+            <p class="election__title">Election Date: August 20, 2024
+                            </p>
+            <p class="election__subtitle">Maharashtra</p>
+          </div>
+        </div>
+        <div class="election__card">
+          <img src="assets/gujarat8.jpg" alt="election" />
+          <div class="election__details">
+            <p class="election__title">Election Date: November 8, 2024
+                            </p>
+            <p class="election__subtitle">Gujarat</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+                        <!-- upcoming elections end -->
+
+                        
+                        <!-- email start -->
+
+
+    <section class="email">
+      <div class="section__container email__container">
+        <div class="email__content">
+          <h2 class="section__title">If You Encounter Any Issues</h2>
+          <p class="section__subtitle">
+            If you experience any issues with the portal or the decentralized voting system, please feel free to email us for assistance. We are here to help!
+          </p>
+        </div>
+        <div class="email__form">
+          <form>
+            <input type="email" placeholder="Your email here" />
+            <button class="btnn" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+                            <!-- email end -->
+
+                            <!-- footer start -->
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>BallotBlock<span>.</span></h3>
+          <p>
+            Our goal is to provide a secure, transparent, and efficient decentralized voting system, ensuring privacy and preventing fraud through blockchain technology.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Support</h4>
+          <p>Home</p>
+          <p>Caste Your Vote</p>
+          <p>Election Results</p>
+          <p>Transparency</p>
+        </div>
+        <div class="footer__col">
+          <h4>Address</h4>
+          <p><span>Email:</span> info@decentralizedvoting.in</p>
+          <p><span>Phone:</span> +91 9876543210</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Decentralized Voting System. All rights reserved.
+Created by BlockWizards Team in Build Blockchain Hackathon.
+      </div>
+    </footer>
+
+                                <!-- footer end -->
+
+
+    <script>
+      function hideNotification() {
+        const overlay = document.getElementById('notificationOverlay');
+        overlay.style.display = 'none';
+      }
+        </script>
+
+        
+  </body>
+</html>

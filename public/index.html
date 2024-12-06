@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="vote.css" />
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <title>Caste Your Vote</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+
+    <nav>
+      <div class="nav__logo">BallotBlock<span>.</span></div>
+      <ul class="nav__links">
+        <li class="link"><a href="main.html">Home</a></li>
+        <li class="link"><a href="#">Caste Your Vote</a></li>
+        <li class="link"><a href="result.html">Election Results</a></li>
+        <li class="link"><a href="transperency.html">Transparency</a></li>
+      </ul>
+      <button class="btnn">Contact Us</button>
+    </nav>
+
+    <!-- navbar end -->
+
+    <br /><br />
+
+    <!-- important notification start -->
+
+    <div class="notifications-overlay" id="notificationOverlay">
+      <div class="notifications-container">
+        <div class="success">
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <svg
+                class="succes-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <div class="success-prompt-wrap">
+              <p class="success-prompt-heading">Important Note</p>
+              <div class="success-prompt-prompt">
+                <p>
+                  Ensure that all the entered information matches exactly with
+                  your PAN card details. If any detail does not match, your vote
+                  will not be counted. Take your time to verify your entries
+                  before submitting. Thank you for your valuable vote!
+                </p>
+              </div>
+              <div class="success-button-container">
+                <button
+                  class="success-button-main"
+                  onclick="hideNotification()"
+                >
+                  Proceed to Vote
+                </button>
+                <button
+                  class="success-button-secondary"
+                  onclick="hideNotification()"
+                >
+                  Review Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- important notification end -->
+
+    <!-- decentralized voting system start -->
+
+    <div class="container">
+      <h1>Decentralized Voting System</h1>
+      <button id="connectButton" class="bttn">Connect MetaMask</button>
+      <div id="candidatesContainer" class="candidates-container">
+        <h2>Candidates</h2>
+        <br />
+        <ul id="candidatesList">
+          <li>Unity Front Alliance (UFA)</li>
+          <li>Democratic Harmony Party (DHP)</li>
+          <li>People's Prosperity Union (PPU)</li>
+          <li>True Democracy Alliance (TDA)</li>
+          <li>Patriot's Unity Party (PUP)</li>
+        </ul>
+      </div>
+      <br /><br />
+
+      <div class="nameboxx">
+        <h4 class="fullname">Enter your full name</h4>
+        <h4 class="agee">Enter your age</h4>
+        <h4 class="pancard">Enter your PAN card no.</h4>
+      </div>
+
+      <div class="namebox">
+        <input type="text" placeholder="Full Name" class="name" required />
+
+        <input type="number" placeholder="Age" class="age" required />
+
+        <input
+          type="password"
+          placeholder="Pancard Number"
+          class="pan"
+          required
+        />
+      </div>
+      <br />
+
+      <div id="voteContainer" class="vote-container">
+        <h2>Vote for a Candidate</h2>
+        <br />
+        <select id="candidateSelect">
+          <option value="" disabled selected>Select a candidate</option>
+          <option value="Unity Front Alliance (UFA)">
+            Unity Front Alliance (UFA)
+          </option>
+          <option value="Democratic Harmony Party (DHP)">
+            Democratic Harmony Party (DHP)
+          </option>
+          <option value="People's Prosperity Union (PPU)">
+            People's Prosperity Union (PPU)
+          </option>
+          <option value="True Democracy Alliance (TDA)">
+            True Democracy Alliance (TDA)
+          </option>
+          <option value="Patriot's Unity Party (PUP)">
+            Patriot's Unity Party (PUP)
+          </option>
+        </select>
+        <button id="voteButton" class="bttn">Vote</button>
+      </div>
+
+      <div id="message" class="message"></div>
+    </div>
+
+    <!-- decentralized voting system end -->
+
+    <!-- footer start -->
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>BallotBlock<span>.</span></h3>
+          <p>
+            Our goal is to provide a secure, transparent, and efficient
+            decentralized voting system, ensuring privacy and preventing fraud
+            through blockchain technology.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Support</h4>
+          <p>Home</p>
+          <p>Caste Your Vote</p>
+          <p>Election Results</p>
+          <p>Transparency</p>
+        </div>
+        <div class="footer__col">
+          <h4>Address</h4>
+          <p><span>Email:</span> info@decentralizedvoting.in</p>
+          <p><span>Phone:</span> +91 9876543210</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Decentralized Voting System. All rights reserved.
+        Created by BlockWizards Team in Build Blockchain Hackathon.
+      </div>
+    </footer>
+
+    <!-- footer end -->
+
+    <script>
+      function hideNotification() {
+        const overlay = document.getElementById("notificationOverlay");
+        overlay.style.display = "none";
+      }
+    </script>
+
+    <script src="app.js"></script>
+    <script src="ethers.js"></script>
+  </body>
+</html>
